@@ -1,6 +1,10 @@
 # gra-project
 Project for Golden Raspberry Awards
 
+### Pré-requesito
+
+JAVA 8
+
 ### Instruções para rodar os testes
 
 ``` bash
