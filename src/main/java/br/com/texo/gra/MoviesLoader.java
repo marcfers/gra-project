@@ -71,6 +71,7 @@ final class MoviesLoader implements CommandLineRunner {
 		final boolean isWinner = "yes".equals(movie.isWinner);
 		final MovieEntity movieEntity = new MovieEntity(movie.year, movie.title, movie.studios, isWinner);
 		this.movieRepository.save(movieEntity);
+		log.info("Loaded: " + movieEntity.toString());
 
 		Arrays.stream(movie.producers).forEach(producers -> {
 			for (final String producer : producers.split(" and ")) {
